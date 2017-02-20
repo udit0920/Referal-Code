@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Welcome!! \nYou have successully logged in"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/generate_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@layout/rounded_border"
+        android:padding="10dp"
+        android:text="Generate Refreral Code"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_generated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generate_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="true" />
+
+
+    <Button
+        android:id="@+id/Refer_IT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_generated"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@layout/rounded_border"
+        android:padding="10dp"
+        android:text="Refer"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/usageReference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Refer_IT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@layout/rounded_border"
+        android:padding="10dp"
+        android:text="Usage of Reference"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:layout_below="@+id/usageReference"
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@layout/rounded_border"
+        android:padding="10dp"
+        android:text="Log Out" />
+
+
+</RelativeLayout>
